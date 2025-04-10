@@ -33,8 +33,8 @@ importers:
         specifier: ^4.x.x || ^5.x.x || ^6.x.x
         version: 6.3.0(typescript@5.8.3)
       zod:
-        specifier: 3.24.2
-        version: 3.24.2
+        specifier: 4.0.0-beta.20250410T041907
+        version: 4.0.0-beta.20250410T041907
     devDependencies:
       '@prisma/internals':
         specifier: ^6.6.0
@@ -109,8 +109,8 @@ importers:
         specifier: ^3.1.1
         version: 3.1.1(@types/node@22.14.0)
       zod:
-        specifier: 3.24.2
-        version: 3.24.2
+        specifier: 4.0.0-beta.20250410T041907
+        version: 4.0.0-beta.20250410T041907
       zod-prisma-types:
         specifier: workspace:*
         version: link:../generator
@@ -629,6 +629,9 @@ packages:
 
   '@vitest/utils@3.1.1':
     resolution: {integrity: sha512-1XIjflyaU2k3HMArJ50bwSh3wKWPD6Q47wz/NUSmRV0zNywPc4w79ARjg/i/aNINHwA+mIALhUVqD9/aUvZNgg==}
+
+  '@zod/core@0.2.0':
+    resolution: {integrity: sha512-0L7DpbqWt+W2IRbWBdWBkgxdacbco4sPdAzYA3AIc3jeFG9Css8jAcYGRjfVUiv+7CZGdLVnn747fcbcdIxpnw==}
 
   acorn-jsx@5.3.2:
     resolution: {integrity: sha512-rq9s+JNhf0IChjtDXxllJ7g41oZk5SlXtp0LHwyA5cejwn7vKmKp4pPri6YEePv2PU65sAsegbXtIinmDFDXgQ==}
@@ -2042,8 +2045,8 @@ packages:
     resolution: {integrity: sha512-rVksvsnNCdJ/ohGc6xgPwyN8eheCxsiLM8mxuE/t/mOVqJewPuO1miLpTHQiRgTKCLexL4MeAFVagts7HmNZ2Q==}
     engines: {node: '>=10'}
 
-  zod@3.24.2:
-    resolution: {integrity: sha512-lY7CDW43ECgW9u1TcT3IoXHflywfVqDYze4waEz812jR/bZ8FHDsl7pFQoSZTz5N+2NqRXs8GBwnAwo3ZNxqhQ==}
+  zod@4.0.0-beta.20250410T041907:
+    resolution: {integrity: sha512-08UlLohDxklYh52NmT/j1R2BoppnHvXZJC2DHSogtTwHQM2VOunOxLkqCdGZ8DTk5dhT4Kyvc3RtvXKoRYWQIQ==}
 
 snapshots:
 
@@ -2488,6 +2491,8 @@ snapshots:
       '@vitest/pretty-format': 3.1.1
       loupe: 3.1.3
       tinyrainbow: 2.0.0
+
+  '@zod/core@0.2.0': {}
 
   acorn-jsx@5.3.2(acorn@8.14.0):
     dependencies:
@@ -4178,4 +4183,6 @@ snapshots:
 
   yocto-queue@0.1.0: {}
 
-  zod@3.24.2: {}
+  zod@4.0.0-beta.20250410T041907:
+    dependencies:
+      '@zod/core': 0.2.0
