@@ -13,7 +13,12 @@ import { parseGeneratorConfig } from './utils/parseGeneratorConfig';
 
 const outputSchema = z.object({
   fromEnvVar: z.string().nullable(),
-  value: z.string({ required_error: 'No output path specified' }),
+  value: z.string({
+    error: (issue) =>
+      issue.input === undefined
+        ? 'No output path specified'
+        : 'Output path not a string',
+  }),
 });
 
 /////////////////////////////////////////
